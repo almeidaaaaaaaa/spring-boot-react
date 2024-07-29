@@ -16,7 +16,7 @@
   text-align: center;
   font-size: medium;
   width: 100%;
-  padding-right: 2.5rem; /* Espaço para o ícone */
+  padding-right: 2.5rem;
 }
 
 .searchContainer {
@@ -27,7 +27,7 @@
 .searchIcon {
   position: absolute;
   top: 50%;
-  right: 0.75rem; /* Ajuste conforme necessário */
+  right: 0.75rem;
   transform: translateY(-50%);
   color: #000; 
   pointer-events: none;
