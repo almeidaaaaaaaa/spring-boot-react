@@ -1,0 +1,38 @@
+.header{
+  height: fit-content;
+  background-color: #0cb6f5;
+}
+
+.logo{
+  width: 2.5cm;
+  height: auto;
+  margin-left: 5vw;
+}
+
+.searchBar{
+  margin-top: 0.8cm;
+  border-radius: 17px;
+  width: 25vw;
+  text-align: center;
+  font-size: medium;
+  width: 100%;
+  padding-right: 2.5rem;
+}
+
+.searchContainer {
+  position: relative;
+  width: 100%;
+}
+
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  transform: translateY(-50%);
+  color: #000; 
+  pointer-events: none;
+}
+
+.dropdown{
+  margin-top: 0.7cm;
+}
