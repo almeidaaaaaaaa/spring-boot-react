@@ -1,9 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col, NavDropdown } from 'react-bootstrap';
-import styles from './Header.module.css';
-import Form from 'react-bootstrap/Form';
+import { Container, Row, Col, NavDropdown, Form } from 'react-bootstrap';
 import { FaSearch } from 'react-icons/fa';
 import { FiAlignJustify } from "react-icons/fi";
+import styles from './Header.module.css';
 
 function Header() {
   return (
