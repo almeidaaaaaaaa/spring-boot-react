@@ -6,7 +6,7 @@ import React, { useEffect, useState } from 'react';
 function App() {
 
   const searchBar = {
-    search: '',
+    param: '',
     keyWord: ''
   }
 
