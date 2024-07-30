@@ -5,14 +5,16 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name="produtos")
+@Table(name="locations")
 @Getter
 @Setter
-public class ProdutoModel {
+public class LocationModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long codigo;
-    private String nome;
-    private String marca;
+    private Long idLocations;
+    private String city;
+    private String state;
+    private String country;
+    private String cep;
 }
