@@ -4,7 +4,15 @@ import { FaSearch } from 'react-icons/fa';
 import { FiAlignJustify } from "react-icons/fi";
 import styles from './Header.module.css';
 
-function Header() {
+function Header({keyBoardEvent, search}) {
+
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      search();
+      event.preventDefault(); 
+    }
+  };
+
   return (
     <Container fluid className={styles.header}>
       <Row>
@@ -13,11 +21,14 @@ function Header() {
         </Col>
 
         <Col>
-          <div className={styles.searchContainer}>
+          <div className={styles.searchContainer} >
             <Form.Control
               className={styles.searchBar}
               type="text"
-              placeholder="Buscar cidade ou CEP"
+              placeholder="Buscar cidade"
+              onChange={keyBoardEvent}
+              onKeyPress={handleKeyPress}
+              name='search'
             />
             <FaSearch className={styles.searchIcon} />
           </div>
