@@ -10,14 +10,13 @@ function App() {
     keyWord: ''
   }
 
-  const [btnCadastrar, setBtnCadastrar] = useState(true);
-  const [searchBars, setsearchBars] = useState([]);
   const [objsearchBar, setObjsearchBar] = useState(searchBar);
 
 
   const digit = (event) => {
     setObjsearchBar({...objsearchBar, keyWord: event.target.value, param: event.target.name});
   }
+
   const search = () => {
     fetch(`http://localhost:8080/locations/search?keyWord=${objsearchBar.keyWord}&searchParam=${objsearchBar.param}`,{
       method: 'Get',
