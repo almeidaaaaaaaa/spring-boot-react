@@ -7,6 +7,7 @@ function App() {
 
   const searchBar = {
     search: '',
+    keyWord: ''
   }
 
   const [btnCadastrar, setBtnCadastrar] = useState(true);
@@ -15,10 +16,10 @@ function App() {
 
 
   const digit = (event) => {
-    setObjsearchBar({...objsearchBar, [event.target.name]: event.target.value});
+    setObjsearchBar({...objsearchBar, keyWord: event.target.value, param: event.target.name});
   }
   const search = () => {
-    fetch(`http://localhost:8080/locations/search?city=${objsearchBar.search}`,{
+    fetch(`http://localhost:8080/locations/search?keyWord=${objsearchBar.keyWord}&searchParam=${objsearchBar.param}`,{
       method: 'Get',
       Headers: {
         'Content-Type': 'application/json',

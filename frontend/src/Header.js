@@ -28,7 +28,7 @@ function Header({keyBoardEvent, search}) {
               placeholder="Buscar cidade"
               onChange={keyBoardEvent}
               onKeyPress={handleKeyPress}
-              name='search'
+              name='city'
             />
             <FaSearch className={styles.searchIcon} />
           </div>
