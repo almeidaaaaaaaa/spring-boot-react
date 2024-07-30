@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Getter
 @Setter
-public class ResponseModel {
+public class RespostaModel {
 
-    private String message;
+    private String mensagem;
 }
